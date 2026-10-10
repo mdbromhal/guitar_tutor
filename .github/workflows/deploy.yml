@@ -37,6 +37,15 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Check dist contents
+        run: |
+          echo "=== dist/ ==="
+          ls -la dist/
+          echo "=== dist/index.html ==="
+          cat dist/index.html
+          echo "=== dist/assets/ ==="
+          ls -la dist/assets/
+
       - name: Upload build to Pages
         uses: actions/upload-pages-artifact@v3
         with:
