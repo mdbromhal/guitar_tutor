@@ -112,7 +112,7 @@ Vite will show a network URL like `http://192.168.x.x:5173` — open that on you
 
 Pushes to `main` trigger two GitHub Actions:
 
-- **lint.yml** — runs ESLint on every push and pull request
+- **lint.yml** — runs ESLint on every push and pull request (runs on all pushes)
 - **deploy.yml** — builds the app and deploys to GitHub Pages
 
 Live URL: `https://mdbromhal.github.io/guitar_tutor/`
